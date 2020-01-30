@@ -7,7 +7,14 @@
 //
 
 #import <ScreenSaver/ScreenSaver.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import "flower.h"
 
 @interface folScreenSaverView : ScreenSaverView
+
+@property CGContextRef CGContext;
+
+@property Flower *mainFlower;
+
 
 @end

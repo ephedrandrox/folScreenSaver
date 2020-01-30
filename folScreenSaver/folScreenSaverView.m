@@ -14,7 +14,10 @@
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+        [self setAnimationTimeInterval:1/30];
+        
+        
+        self.mainFlower = [[Flower alloc] initWithView:(NSRect) frame];
     }
     return self;
 }
@@ -28,15 +31,22 @@
 {
     [super stopAnimation];
 }
-
 - (void)drawRect:(NSRect)rect
 {
+    CGContextRef CGContext = [[NSGraphicsContext currentContext] CGContext];
+    
+    
     [super drawRect:rect];
+ 
+    [self.mainFlower drawFlower: CGContext];
 }
 
 - (void)animateOneFrame
 {
-    return;
+   
+    [self setNeedsDisplayInRect:[self bounds]];
+    
+ 
 }
 
 - (BOOL)hasConfigureSheet

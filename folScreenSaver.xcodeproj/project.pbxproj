@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		130C47CC21B06219006CE92D /* folScreenSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 130C47CB21B06219006CE92D /* folScreenSaverView.h */; };
 		130C47CE21B06219006CE92D /* folScreenSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 130C47CD21B06219006CE92D /* folScreenSaverView.m */; };
+		130C47D721B06284006CE92D /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130C47D621B06284006CE92D /* ScreenSaver.framework */; };
+		130C47D921B062ED006CE92D /* petal.m in Sources */ = {isa = PBXBuildFile; fileRef = 130C47D821B062ED006CE92D /* petal.m */; };
+		13BC687221B1BB0200DD0F19 /* flower.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BC687121B1BB0200DD0F19 /* flower.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +19,11 @@
 		130C47CB21B06219006CE92D /* folScreenSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = folScreenSaverView.h; sourceTree = "<group>"; };
 		130C47CD21B06219006CE92D /* folScreenSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = folScreenSaverView.m; sourceTree = "<group>"; };
 		130C47CF21B06219006CE92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		130C47D621B06284006CE92D /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		130C47D821B062ED006CE92D /* petal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = petal.m; sourceTree = "<group>"; };
+		130C47DA21B06305006CE92D /* petal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = petal.h; sourceTree = "<group>"; };
+		13BC687121B1BB0200DD0F19 /* flower.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flower.m; sourceTree = "<group>"; };
+		13BC687421B1BCB200DD0F19 /* flower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flower.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130C47D721B06284006CE92D /* ScreenSaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +43,7 @@
 			children = (
 				130C47CA21B06219006CE92D /* folScreenSaver */,
 				130C47C921B06219006CE92D /* Products */,
+				130C47D521B06283006CE92D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,9 +60,21 @@
 			children = (
 				130C47CB21B06219006CE92D /* folScreenSaverView.h */,
 				130C47CD21B06219006CE92D /* folScreenSaverView.m */,
+				13BC687121B1BB0200DD0F19 /* flower.m */,
+				13BC687421B1BCB200DD0F19 /* flower.h */,
+				130C47D821B062ED006CE92D /* petal.m */,
+				130C47DA21B06305006CE92D /* petal.h */,
 				130C47CF21B06219006CE92D /* Info.plist */,
 			);
 			path = folScreenSaver;
+			sourceTree = "<group>";
+		};
+		130C47D521B06283006CE92D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				130C47D621B06284006CE92D /* ScreenSaver.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,11 +124,12 @@
 				};
 			};
 			buildConfigurationList = 130C47C221B06219006CE92D /* Build configuration list for PBXProject "folScreenSaver" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 130C47BE21B06219006CE92D;
 			productRefGroup = 130C47C921B06219006CE92D /* Products */;
@@ -133,6 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BC687221B1BB0200DD0F19 /* flower.m in Sources */,
+				130C47D921B062ED006CE92D /* petal.m in Sources */,
 				130C47CE21B06219006CE92D /* folScreenSaverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
